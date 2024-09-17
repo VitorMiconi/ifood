@@ -28,7 +28,18 @@ new Chart(ctx, {
     },
     scales: {
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        ticks: {
+          callback: function(value, index, values) {
+            const labels = [20, 60, 40, 80, 100];
+            return labels.includes(value) ? `${value}%` : ''; // Adiciona '%' apenas para valores específicos
+          },
+          stepSize: 20, // Ajusta o espaçamento entre os valores dos ticks
+          maxTicksLimit: 100, // Limita o número máximo de ticks exibidos
+          padding: 1 // Ajusta o espaçamento entre o rótulo e o eixo
+        },
+        suggestedMin: 0,
+        suggestedMax: 100
       }
     }
   }
