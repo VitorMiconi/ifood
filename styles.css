@@ -86,7 +86,7 @@ p {
 }
 
 .menu-active {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     border-radius: 24px;
 }
 
@@ -160,3 +160,37 @@ p {
 .visit-text span {
   color: #00B69B;
 }
+
+.graphic {
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  border: solid 10px #F6F4F4;
+}
+
+.graphic-head {
+  padding: 6px 0px 12px 0px;
+}
+
+.month-select {
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 2px solid #D5D5D5;
+  color: #D5D5D5;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.month-select:focus {
+  outline: none;
+}
+
+.graphic-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.month-select option {
+  color: #202224;
+}
+
