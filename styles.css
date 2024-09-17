@@ -170,6 +170,20 @@ p {
   border: solid 10px #F6F4F4;
 }
 
+.graphic-left {
+  background-color: white;
+  border-radius: 24px;
+  border: solid 10px #F6F4F4;
+  width: 50%;
+}
+
+.graphic-right {
+  background-color: white;
+  border-radius: 24px;
+  border: solid 10px #F6F4F4;
+  width: 50%;
+}
+
 .graphic-header {
   padding: 6px 0px 12px 0px;
 }
@@ -203,14 +217,6 @@ p {
 
 #graphic-1 {
   height: 200px; /* Ajuste a altura conforme necessário */
-}
-
-.graphic-left {
-  width: 50%;
-}
-
-.graphic-right {
-  width: 50%;
 }
 
 .line {

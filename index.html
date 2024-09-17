@@ -109,42 +109,46 @@
           </div>
         </div>
       </div>
-      <div class="graphic container p-3 d-flex">
-          <div class="graphic-left">
+      <div class="p-3">
+        <div class="row">
+          <!-- Gráfico da esquerda -->
+          <div class="graphic-left col-6 p-3">
             <div class="graphic-header d-flex justify-content-between align-items-center">
-              <div class="graphic-header-top d-flex justify-content-between align-items-center">
-                <p class="graphic-title">Receita</p>
-                <select name="meses" id="meses" class="month-select">
-                  <option value="" hidden>Mêses</option>
-                  <option value="">Janeiro</option>
-                  <option value="">Fevereiro</option>
-                  <option value="">Março</option>
-                  <option value="">Abril</option>
-                  <option value="">Maio</option>
-                  <option value="">Junho</option>
-                  <option value="">Julho</option>
-                  <option value="">Agosto</option>
-                  <option value="">Setembro</option>
-                  <option value="">Outubro</option>
-                  <option value="">Novembro</option>
-                  <option value="">Dezembro</option>
-                </select>
-              </div>
-            </div>  
+              <p class="graphic-title">Receita</p>
+              <select name="meses" id="meses" class="month-select">
+                <option value="" hidden>Mêses</option>
+                <option value="">Janeiro</option>
+                <option value="">Fevereiro</option>
+                <option value="">Março</option>
+                <option value="">Abril</option>
+                <option value="">Maio</option>
+                <option value="">Junho</option>
+                <option value="">Julho</option>
+                <option value="">Agosto</option>
+                <option value="">Setembro</option>
+                <option value="">Outubro</option>
+                <option value="">Novembro</option>
+                <option value="">Dezembro</option>
+              </select>
+            </div>
             <div class="canvas-container">
               <canvas id="graphic-1"></canvas>
             </div>
           </div>
-          <div class="graphic-right d-flex justify-content-between">
+      
+          <!-- Gráfico da direita -->
+          <div class="graphic-right col-6 d-flex justify-content-between p-3">
             <div class="more-sold">
-              <p class="graphic-title graphic-header">Mais vendidos</p>
+              <p class="graphic-title">Mais vendidos</p>
             </div>
             <div class="line"></div>
             <div class="less-sold">
-              <p class="graphic-title graphic-header">Menos vendidos</p>
+              <p class="graphic-title">Menos vendidos</p>
             </div>
           </div>
+        </div>
       </div>
+      
     </div>
   </div>
 
