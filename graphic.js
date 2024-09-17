@@ -1,7 +1,7 @@
 const ctx = document.getElementById('graphic-1').getContext('2d');
 
 // Criando o gradiente
-const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+const gradient = ctx.createLinearGradient(0, 0, 0, 450);
 gradient.addColorStop(0, 'rgba(255, 0, 0, 0.5)'); // Cor no topo (mais opaca)
 gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');   // Cor na base (transparente)
 

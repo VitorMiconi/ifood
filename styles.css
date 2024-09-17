@@ -174,14 +174,14 @@ p {
   background-color: white;
   border-radius: 24px;
   border: solid 10px #F6F4F4;
-  width: 50%;
+  width: 75%;
 }
 
 .graphic-right {
   background-color: white;
   border-radius: 24px;
   border: solid 10px #F6F4F4;
-  width: 50%;
+  width: 25%;
 }
 
 .graphic-header {
@@ -209,6 +209,7 @@ p {
 .graphic-title {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .month-select option {
