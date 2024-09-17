@@ -226,3 +226,33 @@ p {
   width: 1px;
   opacity: 0.4;
 }
+
+.profile-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  height: 300px;
+}
+
+.profile-image {
+  height: 150px;
+}
+
+.edit-profile-btn {
+  border: none;
+  background-color: rgb(255, 0, 0);
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.8s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: rgb(184, 0, 0);
+  transition: 0.8s;
+}
+
+.edit-profile-btn:focus {
+  outline: none;
+}
