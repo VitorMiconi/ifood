@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Lateral com Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral com Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+      <div class="logo">
+        <img src="src/img/logo-ifood.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+      </div>
+      <div class="user-info d-flex align-items-center">
+          <img src="src/img/user.png" alt="#">
+      </div>
+    </header>
+  
+    <div class="d-flex">
+      <nav id="sidebar" class=" position-relative">
+        <button id="toggle-btn" class="btn position-absolute top-0 end-0 m-2">
+          <i id="toggle-icon" class="bi bi-chevron-left"></i>
+        </button>
+        <ul class="nav flex-column text-white mt-4">
+          <li class="nav-item menu-active">
+            <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon1.svg" alt="">
+              <span class="text-color-active">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon2.svg" alt="">
+              <span class="text-color">Detalhes dos pedidos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon3.svg" alt="">
+              <span class="text-color">Balanço Financeiro</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon4.svg" alt="">
+              <span class="text-color">Relatórios</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon5.svg" alt="">
+              <span class="text-color">Meu perfil</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div id="content" class="p-4">
+        <div class="container">
+          <div class="flex-fill p-3"></div>
+            <!-- Filtros e Título -->
+            <header class="d-flex justify-content-between align-items-start">
+                <h4 class="text-color-pedidos h4 mb-3">Pedidos Realizados</h4>
+
+                <form class="d-flex align-items-end">
+                    <div class="form-group me-2">
+                        <label for="data-inicial" class="form-label cd">Data Inicial</label>
+                        <input type="date" class="form-control form-control-sm bg-light cd" id="data-inicial">
+                    </div>
+                    <div class="form-group me-2">
+                        <label for="data-final" class="form-label cd">Data Final</label>
+                        <input type="date" class="form-control form-control-sm bg-light cd"  id="data-final">
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-sm mt-2">Filtrar</button>
+                </form>
+            </header>
+
+            <!-- Tabela -->
+            <div class="mt-4">
+                <table class="table table-striped bg-light text-center ">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID Pedido</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Item</th>
+                            <th scope="col">Usuário</th>
+                            <th scope="col">Valor Total do Pedido</th>
+                            <th scope="col">Método de Pagamento</th>
+                            <th scope="col">Tipo de Entrega</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center table-striped">
+                        <tr>
+                            <td>0001</td>
+                            <td>20/09/2023</td>
+                            <td>Feijão Tropeiro</td>
+                            <td>Maria do Carmo</td>
+                            <td>R$ 98,76</td>
+                            <td>Crédito Via Ifood</td>
+                            <td>Delivery</td>
+                        </tr>
+                        <tr>
+                            <td>0002</td>
+                            <td>20/09/2023</td>
+                            <td>Pão de Queijo</td>
+                            <td>João Souza</td>
+                            <td>R$ 20,30</td>
+                            <td>Crédito Via Ifood</td>
+                            <td>Delivery</td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>20/09/2023</td>
+                            <td>Porção de Clabresa</td>
+                            <td>Marilda Costa</td>
+                            <td>R$ 67,50</td>
+                            <td>Crédito Via Ifood</td>
+                            <td>Delivery</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+    <!-- Paginação -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-4">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item "><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
