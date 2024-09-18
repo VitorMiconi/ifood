@@ -53,16 +53,16 @@
               <span class="text-color">Balanço Financeiro</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="relatorios.html" class="nav-link text-white align-items-center d-flex">
-              <img src="src/img/icon4.svg" alt="">
-              <span class="text-color">Relatórios</span>
-            </a>
-          </li>
           <li class="nav-item menu-active">
             <a href="#" class="nav-link text-white align-items-center d-flex">
+              <img src="src/img/icon4.svg" alt="">
+              <span class="text-color-active">Relatórios</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link text-white align-items-center d-flex">
               <img src="src/img/icon5.svg" alt="">
-              <span class="text-color-active">Meu perfil</span>
+              <span class="text-color">Meu perfil</span>
             </a>
           </li>
         </ul>
@@ -70,24 +70,57 @@
   
       <div id="content" class="p-4">
         <div class="container">
-            <div class="container profile-container d-flex justify-content-between
-            align-items-center p-4">
-                <div class="profile d-flex align-items-center gap-5">
-                    <img class="profile-image" src="src/img/user.png" alt="">
-                    <div>
-                        <p>miconifrucciramalhogomes@gmail.com</p>
-                        <strong>Miconi Gomes</strong>
-                        <p>+55 11 999567868</p>
-                    </div>
-                    <div>
-                        <p>Rua Augusta - 145</p>
-                        <strong>São Paulo - SP</strong>
-                        <p>Bairro Boa Vista</p>
-                    </div>
-                </div>
+            <div class="container relatories-container p-4">
+              <p class="graphic-title">Relatórios</p>
+              <input class="p-2" type="search" placeholder="Pesquisar relatórios">
+              <div class="generate-relatorie-container p-4 mt-3 d-flex align-items-center justify-content-between">
                 <div>
-                    <button class="edit-profile-btn">Editar perfil</button>
+                  <strong>Você pode gerar um novo relatório financeiro</strong>
+                  <p>Você pode gerar um novo relatório para qualquer intervalo de data e categoria</p>
                 </div>
+                <button class="generate-relatorie-btn">Gerar novo relatório</button>
+              </div>
+              <div class="available-relatories-container mt-3"> 
+                <p class="graphic-title">Relatórios disponíveis</p>
+                <div class="available-relatories-content row d-flex flex-column gap-3">
+                  <div class="col-1 d-flex justify-content-between columns-relatories">
+                    <div class="d-flex gap-3">
+                      <img src="src/img/relatorioicon.svg" alt="">
+                      <div class="d-flex flex-column">
+                        <strong>Resumo geral mensal</strong>
+                        <p>Aug 1, 2024 - Aug 31, 2024</p>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="download-relatorie-btn">Download</button>
+                    </div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-between columns-relatories">
+                    <div class="d-flex gap-3">
+                      <img src="src/img/relatorioicon.svg" alt="">
+                      <div class="d-flex flex-column">
+                        <strong>Resumo geral semanal</strong>
+                        <p>Jul 1, 2024 - Jul 31, 2024</p>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="download-relatorie-btn">Download</button>
+                    </div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-between columns-relatories">
+                    <div class="d-flex gap-3">
+                      <img src="src/img/relatorioicon.svg" alt="">
+                      <div class="d-flex flex-column">
+                        <strong>Resumo geral mensal - Maiores pedidos</strong>
+                        <p>Jun 1, 2024 - Jun 30, 2024</p>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="download-relatorie-btn">Download</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
       </div>

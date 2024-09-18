@@ -239,7 +239,7 @@ p {
   height: 150px;
 }
 
-.edit-profile-btn {
+.edit-profile-btn, .generate-relatorie-btn {
   border: none;
   background-color: rgb(255, 0, 0);
   padding: 8px 16px;
@@ -249,16 +249,90 @@ p {
   transition: 0.8s ease;
 }
 
-.edit-profile-btn:hover {
+.edit-profile-btn:hover, .generate-relatorie-btn:hover {
   background-color: rgb(184, 0, 0);
   transition: 0.8s;
 }
 
-.edit-profile-btn:focus {
+.edit-profile-btn:focus, .generate-relatorie-btn:focus {
   outline: none;
-
+}
 
 .page-link {
   color: #E60023;
   border: none;
+}
+
+.relatories-container  {
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.relatories-container input {
+  width: 60%;
+  border: none;
+  background-color: #F6F4F4;
+  border-radius: 16px;
+  padding-left: 20px; 
+  font-size: 16px; 
+  color: #637587;
+  box-sizing: border-box; 
+  text-indent: 10px;
+}
+
+.relatories-container input::placeholder {
+  display: flex;
+  align-items: center;
+  color: #637587;
+  padding-left: 30px;
+  background-image: url('src/img/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 8px center; 
+}
+
+
+.relatories-container input:focus {
+  background-image: none;
+  outline: none;
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+input[type="search"] {
+  -moz-appearance: textfield;
+}
+
+
+.generate-relatorie-container {
+  border: 2px solid #F6F4F4;
+  border-radius: 16px;
+}
+
+.columns-relatories {
+  width: 100%;
+}
+
+.download-relatorie-btn {
+  background-color: #F6F4F4;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: 0.8s ease;
+}
+
+.download-relatorie-btn:hover {
+  background-color: #c2c2c2;
+  transition: 0.8s;
+}
+
+.download-relatorie-btn:focus {
+  outline: none;
 }
