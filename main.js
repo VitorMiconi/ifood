@@ -14,3 +14,16 @@ document.getElementById('toggle-btn').addEventListener('click', function() {
       toggleIcon.classList.add('bi-chevron-left');
     }
   });
+
+
+const relatorieBtn = document.getElementById('generate-relatorie-btn');
+const modal = document.querySelector('dialog');
+const generateRelatorieBtn = document.querySelector('dialog button')
+
+relatorieBtn.addEventListener('click', function() {
+  modal.show();
+})  
+
+generateRelatorieBtn.addEventListener('click', function() {
+  modal.close();
+})  
