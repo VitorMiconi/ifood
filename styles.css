@@ -336,3 +336,7 @@ input[type="search"] {
 .download-relatorie-btn:focus {
   outline: none;
 }
+
+.grafico-img {
+  width: 100%;
+}
